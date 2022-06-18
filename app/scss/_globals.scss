@@ -1,5 +1,26 @@
 html {
+    background-color: $col-veryDarkBlue;
+    font-family: 'Outfit', sans-serif;
+    color: white;
     margin: 0;
     padding: 0;
-    font-family: 'Outfit', sans-serif;
+
+    & body, section, div, ul, li, a, h1, h2, h3, h4, p, nav, img {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        color: white;
+        text-decoration: none;
+        cursor: default;
+        transition: 125ms;
+    }
+
+    & li, a {
+        color: $col-paleBlue;
+    }
+
+    & li:hover, a:hover {
+        color: white;
+        cursor: pointer;
+    }
 }
