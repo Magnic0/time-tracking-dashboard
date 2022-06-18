@@ -1,6 +1,28 @@
 html {
+  background-color: #0f1424;
+  font-family: 'Outfit', sans-serif;
+  color: white;
   margin: 0;
   padding: 0;
-  font-family: 'Outfit', sans-serif;
+}
+
+html body, html section, html div, html ul, html li, html a, html h1, html h2, html h3, html h4, html p, html nav, html img {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  cursor: default;
+  -webkit-transition: 125ms;
+  transition: 125ms;
+}
+
+html li, html a {
+  color: #bdc1ff;
+}
+
+html li:hover, html a:hover {
+  color: white;
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */
