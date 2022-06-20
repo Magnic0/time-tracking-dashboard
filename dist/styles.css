@@ -4,6 +4,8 @@ html {
   color: white;
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html body, html section, html div, html ul, html li, html a, html h1, html h2, html h3, html h4, html p, html nav, html img {
