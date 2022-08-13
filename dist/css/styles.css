@@ -6,7 +6,10 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
-html body, html section, html div, html ul, html li, html a, html h1, html h2, html h3, html h4, html p, html nav, html img {
+html body {
+  padding: 80px 20px;
+}
+html section, html div, html ul, html li, html a, html h1, html h2, html h3, html h4, html p, html nav, html img {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -24,6 +27,63 @@ html li:hover, html a:hover {
 }
 
 header {
+  align-items: center;
+  border-radius: 15px;
   display: flex;
-  background-color: blue;
+  flex-direction: column;
+  margin: auto;
+  max-width: 350px;
+  min-width: 315px;
+  width: 100%;
+}
+header .user-container {
+  background-color: hsl(246deg, 80%, 60%);
+  border-radius: 15px;
+  box-sizing: border-box;
+  height: 135px;
+  padding: 30px 50px 30px 30px;
+  width: 100%;
+  z-index: 1;
+}
+header .user-container .user {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+header .user-container .user h1 {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+header .user-container .user h2 {
+  color: hsl(236deg, 100%, 87%);
+  font-size: 1rem;
+  font-weight: 300;
+}
+header .user-container .user img {
+  width: 67px;
+  height: 67px;
+  border: 3px solid white;
+  border-radius: 100%;
+}
+header .category {
+  background-color: hsl(235deg, 46%, 20%);
+  border-radius: 0px 0px 15px 15px;
+  box-sizing: border-box;
+  height: 80px;
+  position: relative;
+  top: -15px;
+  width: 100%;
+}
+header .category ul {
+  display: flex;
+  font-size: 1.1rem;
+  justify-content: space-around;
+  margin-top: 35px;
+  position: relative;
+  width: 100%;
+}
+header .category ul li {
+  width: auto;
 }/*# sourceMappingURL=styles.css.map */
