@@ -21,4 +21,9 @@ html li, html a {
 html li:hover, html a:hover {
   color: white;
   cursor: pointer;
+}
+
+header {
+  display: flex;
+  background-color: blue;
 }/*# sourceMappingURL=styles.css.map */
