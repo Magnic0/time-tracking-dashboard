@@ -12,8 +12,9 @@ header {
         background-color: $col-Blue;
         border-radius: 15px;
         box-sizing: border-box;
+        display: flex;
         height: 135px;
-        padding: 30px 50px 30px 30px;
+        justify-content: space-around;
         width: 100%;
         z-index: 1;
 
@@ -22,7 +23,7 @@ header {
             display: flex;
             justify-content: space-between;
             position: relative;
-            width: 100%;
+            width: 75%;
 
             & h1 {
                 font-size: 1.4rem;
@@ -57,13 +58,10 @@ header {
             display: flex;
             font-size: 1.1rem;
             justify-content: space-around;
+            margin: 0 auto;
             margin-top: 35px;
             position: relative;
-            width: 100%;
-
-            & li {
-                width: auto;
-            }
+            width: 80%;
         }
     }
 }
