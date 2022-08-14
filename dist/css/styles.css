@@ -77,7 +77,7 @@ header .category {
   top: -15px;
   width: 100%;
 }
-header .category ul {
+header .category nav {
   display: flex;
   font-size: 1.1rem;
   justify-content: space-around;
