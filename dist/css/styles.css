@@ -85,4 +85,94 @@ header .category nav {
   margin-top: 35px;
   position: relative;
   width: 80%;
+}
+
+main {
+  align-items: center;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 350px;
+  min-width: 315px;
+  width: 100%;
+}
+main .timer {
+  width: 100%;
+}
+main .timer .timer-front {
+  background-color: hsl(235deg, 46%, 20%);
+  border-radius: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  justify-content: center;
+  position: relative;
+  top: -25px;
+  width: 100%;
+}
+main .timer .timer-front .timer-front-container {
+  display: flex;
+  height: 60px;
+  justify-content: space-around;
+}
+main .timer .timer-front .timer-front-container.timer-front-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+main .timer .timer-front .timer-front-container .settings-btn {
+  align-self: flex-end;
+}
+main .timer .timer-front .timer-front-container .settings-btn span {
+  background-color: hsl(236deg, 100%, 87%);
+  border-radius: 5px;
+  height: 6px;
+  width: 6px;
+  transition: 125ms;
+}
+main .timer .timer-front .timer-front-container .settings-btn:hover {
+  cursor: pointer;
+}
+main .timer .timer-front .timer-front-container .settings-btn:hover span {
+  background-color: white;
+}
+main .timer #work, main .timer #play, main .timer #study, main .timer #exercise, main .timer #social, main .timer #selfcare {
+  background-color: gray;
+  background-position-x: 90%;
+  background-position-y: -5px;
+  background-repeat: no-repeat;
+  background-size: 70px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  display: flex;
+  height: 70px;
+  justify-content: space-around;
+  width: 100%;
+}
+main .timer #work {
+  background-color: hsl(15deg, 100%, 70%);
+  background-image: url(../../images/icon-work.svg);
+}
+main .timer #play {
+  background-color: hsl(195deg, 74%, 62%);
+  background-image: url(../../images/icon-play.svg);
+}
+main .timer #study {
+  background-color: hsl(348deg, 100%, 68%);
+  background-image: url(../../images/icon-study.svg);
+}
+main .timer #exercise {
+  background-color: hsl(145deg, 58%, 55%);
+  background-image: url(../../images/icon-exercise.svg);
+}
+main .timer #social {
+  background-color: hsl(264deg, 64%, 52%);
+  background-image: url(../../images/icon-social.svg);
+}
+main .timer #selfcare {
+  background-color: hsl(43deg, 84%, 65%);
+  background-image: url(../../images/icon-self-care.svg);
 }/*# sourceMappingURL=styles.css.map */
