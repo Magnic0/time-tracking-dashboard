@@ -13,11 +13,11 @@ main {
 
         // Component info
         & .timer-front {
+            align-items: center;
             background-color: $col-darkBlue;
             border-radius: 15px;
             box-sizing: border-box;
             display: flex;
-            flex-direction: column;
             height: 120px;
             justify-content: center;
             position: relative;
@@ -25,23 +25,29 @@ main {
             width: 100%;
 
             & .timer-front-container {
+                box-sizing: inherit;
                 display: flex;
-                height: 60px;
+                flex-direction: column;
+                height: 65%;
                 justify-content: space-around;
+                width: 80%;
 
-                &.timer-front-container div {
+                & div {
+                    box-sizing: inherit;
                     display: flex;
-                    flex-direction: column;
                     justify-content: space-between;
-                    align-content: flex-start;
+                    align-items: baseline;
                 }
 
                 & .settings-btn {
-                    align-self: flex-end;
-                    
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 25px;
+
                     & span {
                         background-color: $col-paleBlue;
-                        border-radius: 5px;
+                        border-radius: 6px;
                         height: 6px;
                         width: 6px;
                         transition: 125ms;
