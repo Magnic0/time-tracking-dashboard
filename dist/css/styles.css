@@ -25,6 +25,9 @@ html li:hover, html a:hover {
   color: white;
   cursor: pointer;
 }
+html .attribution {
+  text-align: center;
+}
 
 header {
   align-items: center;
@@ -101,11 +104,11 @@ main .timer {
   width: 100%;
 }
 main .timer .timer-front {
+  align-items: center;
   background-color: hsl(235deg, 46%, 20%);
   border-radius: 15px;
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
   height: 120px;
   justify-content: center;
   position: relative;
@@ -113,22 +116,28 @@ main .timer .timer-front {
   width: 100%;
 }
 main .timer .timer-front .timer-front-container {
-  display: flex;
-  height: 60px;
-  justify-content: space-around;
-}
-main .timer .timer-front .timer-front-container.timer-front-container div {
+  box-sizing: inherit;
   display: flex;
   flex-direction: column;
+  height: 65%;
+  justify-content: space-around;
+  width: 80%;
+}
+main .timer .timer-front .timer-front-container div {
+  box-sizing: inherit;
+  display: flex;
   justify-content: space-between;
-  align-content: flex-start;
+  align-items: baseline;
 }
 main .timer .timer-front .timer-front-container .settings-btn {
-  align-self: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 25px;
 }
 main .timer .timer-front .timer-front-container .settings-btn span {
   background-color: hsl(236deg, 100%, 87%);
-  border-radius: 5px;
+  border-radius: 6px;
   height: 6px;
   width: 6px;
   transition: 125ms;
