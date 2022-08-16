@@ -1,0 +1,102 @@
+main {
+    align-items: center;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 350px;
+    min-width: 315px;
+    width: 100%;
+
+    & .timer {
+        width: 100%;
+
+        // Component info
+        & .timer-front {
+            background-color: $col-darkBlue;
+            border-radius: 15px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            height: 120px;
+            justify-content: center;
+            position: relative;
+            top: -25px;
+            width: 100%;
+
+            & .timer-front-container {
+                display: flex;
+                height: 60px;
+                justify-content: space-around;
+
+                &.timer-front-container div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-content: flex-start;
+                }
+
+                & .settings-btn {
+                    align-self: flex-end;
+                    
+                    & span {
+                        background-color: $col-paleBlue;
+                        border-radius: 5px;
+                        height: 6px;
+                        width: 6px;
+                        transition: 125ms;
+                    }
+                }
+    
+                & .settings-btn:hover {
+                    cursor: pointer;
+
+                    & span {
+                        background-color: white;
+                    }
+                }
+            }
+        }
+
+        // Components
+        & #work, #play, #study, #exercise, #social, #selfcare {
+            background-color: gray;
+            background-position-x: 90%;
+            background-position-y: -5px;
+            background-repeat: no-repeat;
+            background-size: 70px;
+            border-radius: 15px;
+            box-sizing: border-box;
+            display: flex;
+            height: 70px;
+            justify-content: space-around;
+            width: 100%;
+        }
+    
+        // Assign color and svg to each type
+        & #work {
+            background-color: $col-lightOrange;
+            background-image: url(../../images/icon-work.svg);
+        }
+        & #play {
+            background-color: $col-softBlue;
+            background-image: url(../../images/icon-play.svg);
+        }
+        & #study {
+            background-color: $col-lightRed;
+            background-image: url(../../images/icon-study.svg);
+        }
+        & #exercise {
+            background-color: $col-lime;
+            background-image: url(../../images/icon-exercise.svg);
+        }
+        & #social {
+            background-color: $col-violet;
+            background-image: url(../../images/icon-social.svg);
+        }
+        & #selfcare {
+            background-color: $col-softYellow;
+            background-image: url(../../images/icon-self-care.svg);
+        }
+    }
+}
