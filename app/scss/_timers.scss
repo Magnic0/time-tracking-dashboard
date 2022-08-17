@@ -37,19 +37,37 @@ main {
                     display: flex;
                     justify-content: space-between;
                     align-items: baseline;
+
+                    & h3 {
+                        font-size: 1rem;
+                    }
+                }
+
+                & div:last-child {
+                    align-items: center;
+
+                    & span:first-child {
+                        font-size: 2rem;
+                        font-weight: $font-light;
+                    }
+
+                    & span:last-child {
+                        color: $col-paleBlue;
+                        font-size: .95rem;
+                    }
                 }
 
                 & .settings-btn {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
-                    width: 25px;
+                    width: 22px;
 
                     & span {
                         background-color: $col-paleBlue;
                         border-radius: 6px;
-                        height: 6px;
-                        width: 6px;
+                        height: 5px;
+                        width: 5px;
                         transition: 125ms;
                     }
                 }
