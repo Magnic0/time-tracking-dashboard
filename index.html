@@ -19,17 +19,17 @@
 
 <body>
   <header>
-    <section class="user-container">
-      <div class="user">
-        <img src="./images/image-jeremy.png" alt="">
-        <div>
-          <h2>Report for</h2>
-          <h1>Jeremy Robson</h1>
+    <section class="user container">
+      <div class="user__insideContainer">
+        <img src="./images/image-jeremy.png" alt="Profile photo">
+        <div class="user__insideContainer--textContainer">
+          <label>Report for</label>
+          <span>Jeremy Robson</span>
         </div>
       </div>
     </section>
 
-    <section class="category">
+    <section class="category container">
       <nav>
         <li>Daily</li>
 
@@ -41,23 +41,21 @@
   </header>
   
   <main>
-    <section class="timer">
-      <div id="work">
+    <section class="timer container">
+      <div class="timer__bg timer__bg--play">
       </div>
-      <div class="timer-front">
-        <div class="timer-front-container">
-          <div>
-            <h3>Work</h3>
-            <div class="settings-btn">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-          <div>
-            <span>5hrs</span>
-            <span>Last Week - 7hrs</span>
-          </div>
+      <div class="timer__inside">
+        <div>
+          <label>Work</label>
+          <a class="timer__inside--button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <div>
+          <span>5hrs</span>
+          <span>Last Week - 7hrs</span>
         </div>
       </div>
     </section>
