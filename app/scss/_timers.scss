@@ -1,126 +1,106 @@
-main {
-    align-items: center;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    max-width: 350px;
-    min-width: 315px;
+.timer {
     width: 100%;
 
-    & .timer {
+    &__bg {
+        background-color: whitesmoke;
+        background-position-x: 90%;
+        background-position-y: rem(-5);
+        background-repeat: no-repeat;
+        background-size: rem(70);
+        border-radius: 15px;
+        box-sizing: border-box;
+        display: flex;
+        height: rem(70);
+        justify-content: space-around;
         width: 100%;
 
-        // Component info
-        & .timer-front {
-            align-items: center;
-            background-color: $col-darkBlue;
-            border-radius: 15px;
-            box-sizing: border-box;
-            display: flex;
-            height: 120px;
-            justify-content: center;
-            position: relative;
-            top: -25px;
-            width: 100%;
-
-            & .timer-front-container {
-                box-sizing: inherit;
-                display: flex;
-                flex-direction: column;
-                height: 65%;
-                justify-content: space-around;
-                width: 80%;
-
-                & div {
-                    box-sizing: inherit;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: baseline;
-
-                    & h3 {
-                        font-size: 1rem;
-                    }
-                }
-
-                & div:last-child {
-                    align-items: center;
-
-                    & span:first-child {
-                        font-size: 2rem;
-                        font-weight: $font-light;
-                    }
-
-                    & span:last-child {
-                        color: $col-paleBlue;
-                        font-size: .95rem;
-                    }
-                }
-
-                & .settings-btn {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    width: 22px;
-
-                    & span {
-                        background-color: $col-paleBlue;
-                        border-radius: 6px;
-                        height: 5px;
-                        width: 5px;
-                        transition: 125ms;
-                    }
-                }
-    
-                & .settings-btn:hover {
-                    cursor: pointer;
-
-                    & span {
-                        background-color: white;
-                    }
-                }
-            }
-        }
-
-        // Components
-        & #work, #play, #study, #exercise, #social, #selfcare {
-            background-color: gray;
-            background-position-x: 90%;
-            background-position-y: -5px;
-            background-repeat: no-repeat;
-            background-size: 70px;
-            border-radius: 15px;
-            box-sizing: border-box;
-            display: flex;
-            height: 70px;
-            justify-content: space-around;
-            width: 100%;
-        }
-    
-        // Assign color and svg to each type
-        & #work {
+        &--work {
             background-color: $col-lightOrange;
             background-image: url(../../images/icon-work.svg);
         }
-        & #play {
+
+        &--play {
             background-color: $col-softBlue;
             background-image: url(../../images/icon-play.svg);
         }
-        & #study {
+        &--study {
             background-color: $col-lightRed;
             background-image: url(../../images/icon-study.svg);
         }
-        & #exercise {
+        &--exercise {
             background-color: $col-lime;
             background-image: url(../../images/icon-exercise.svg);
         }
-        & #social {
+        &--social {
             background-color: $col-violet;
             background-image: url(../../images/icon-social.svg);
         }
-        & #selfcare {
+        &--selfcare {
             background-color: $col-softYellow;
             background-image: url(../../images/icon-self-care.svg);
+        }
+    }
+
+    & .timer__inside {
+        align-items: center;
+        background-color: $col-darkBlue;
+        border-radius: rem(15);
+        display: flex;
+        flex-direction: column;
+        height: rem(120);
+        justify-content: center;
+        position: relative;
+        top: rem(-25);
+        width: 100%;
+        
+        & div {
+            align-items: baseline;
+            box-sizing: inherit;
+            display: flex;
+            height: rem(30);
+            justify-content: space-between;
+            width: 80%;
+
+            & label {
+                font-size: rem(16);
+            }
+        }
+
+        & div:last-child {
+            align-items: center;
+
+            & span:first-child {
+                font-size: 2rem;
+                font-weight: $font-light;
+            }
+
+            & span:last-child {
+                color: $col-paleBlue;
+                font-size: .95rem;
+            }
+        }
+
+        &--button {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 22px;
+
+            & span {
+                background-color: $col-paleBlue;
+                border-radius: 6px;
+                height: 5px;
+                width: 5px;
+                transition: 125ms;
+            }
+
+            &:hover {
+                cursor: pointer;
+    
+                & span {
+                    background-color: white;
+                }
+            }
         }
     }
 }

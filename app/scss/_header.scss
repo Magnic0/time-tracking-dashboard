@@ -1,44 +1,44 @@
 header {
     align-items: center;
-    border-radius: 15px;
     display: flex;
     flex-direction: column;
-    margin: auto;
-    max-width: 350px;
-    min-width: 315px;
     width: 100%;
 
-    & .user-container {
+    & .user {
         background-color: $col-Blue;
-        border-radius: 15px;
-        box-sizing: border-box;
+        border-radius: rem(15);
         display: flex;
-        height: 135px;
+        height: rem(135);
         justify-content: space-around;
         width: 100%;
         z-index: 1;
-
-        & .user {
+        
+        &__insideContainer {
             align-items: center;
             display: flex;
             justify-content: space-between;
             position: relative;
-            width: 75%;
+            width: 80%;
 
-            & h1 {
-                font-size: 1.4rem;
-                font-weight: $font-light;
+            &--textContainer {
+                display: flex;
+                flex-direction: column;
+
+                & span {
+                    font-size: rem(23);
+                    font-weight: $font-light;
+                }
+        
+                & label {
+                    color: $col-paleBlue;
+                    font-size: rem(16);
+                    font-weight: $font-light;
+                }
             }
-
-            & h2 {
-                color: $col-paleBlue;
-                font-size: 1rem;
-                font-weight: $font-light;
-            }
-
+    
             & img {
-                width: 67px;
-                height: 67px;
+                width: rem(67);
+                height: rem(67);
                 border: 3px solid white;
                 border-radius: 100%;
             }
@@ -47,19 +47,20 @@ header {
 
     & .category {
         background-color: $col-darkBlue;
-        border-radius: 0px 0px 15px 15px;
+        border-bottom-right-radius: rem(15);
+        border-bottom-left-radius: rem(15);
         box-sizing: border-box;
-        height: 80px;
+        height: rem(80);
         position: relative;
-        top: -15px;
+        top: rem(-15);
         width: 100%;
 
         & nav {
             display: flex;
-            font-size: 1.1rem;
+            font-size: rem(17);
             justify-content: space-around;
-            margin: 0 auto;
-            margin-top: 35px;
+            margin: auto;
+            margin-top: rem(35);
             position: relative;
             width: 80%;
         }

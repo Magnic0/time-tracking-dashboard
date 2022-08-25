@@ -6,8 +6,15 @@ html {
     padding: 0;
     box-sizing: border-box;
 
+    &.container {
+        box-sizing: border-box;
+    }
+
     & body {
-        padding: 80px 20px;
+        max-width: rem(350);
+        min-width: rem(315);
+        margin: auto;
+        padding: rem(80) rem(20);
     }
 
     & section, div, ul, li, a, h1, h2, h3, h4, p, nav, img {
