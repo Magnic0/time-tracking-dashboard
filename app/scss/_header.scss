@@ -67,3 +67,20 @@ header {
         }
     }
 }
+
+@media screen and (min-width: 1000px) {
+    header {
+        width: auto;
+        height: 100%;
+
+        & .user {
+            max-width: rem(255);
+            height: rem(354);
+        }
+
+        & .category {
+            max-width: rem(255);
+            height: rem(178);
+        }
+    }
+}

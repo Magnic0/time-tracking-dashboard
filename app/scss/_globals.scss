@@ -37,7 +37,18 @@ html {
     }
 
     & .attribution {
+        display: none;
         text-align: center;
+    }
+}
+
+@media (min-width: 1000px) {
+    html {
+        & body {
+            max-width: 76%;
+            min-width: auto;
+            min-height: 518px;
+        }
     }
 }
 

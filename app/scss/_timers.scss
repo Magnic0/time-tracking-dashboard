@@ -62,7 +62,7 @@
             width: 80%;
 
             & label {
-                font-size: rem(16);
+                font-size: rem(18);
             }
         }
 
@@ -70,13 +70,13 @@
             align-items: center;
 
             & span:first-child {
-                font-size: 2rem;
+                font-size: rem(32);
                 font-weight: $font-light;
             }
 
             & span:last-child {
                 color: $col-paleBlue;
-                font-size: .95rem;
+                font-size: rem(16);
             }
         }
 
@@ -102,5 +102,11 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .timer {
+        display: none;
     }
 }
