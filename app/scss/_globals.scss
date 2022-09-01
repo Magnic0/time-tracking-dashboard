@@ -50,7 +50,7 @@ html {
         justify-content: center;
 
         & body {
-            align-items: center;
+            align-items: flex-start;
             display: flex;
             justify-content: center;
             max-width: unset;
@@ -61,7 +61,7 @@ html {
             main {
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-around;
+                justify-content: flex-start;
                 max-height: unset;
                 max-width: rem(825);
             }
