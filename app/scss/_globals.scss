@@ -17,14 +17,15 @@ html {
         padding: rem(80) rem(20);
     }
 
-    & section, div, ul, li, a, h1, h2, h3, h4, p, nav, img {
+    & section, div, a, nav, img, span, label {
+        color: white;
+        cursor: default;
+        list-style: none;
         margin: 0;
         padding: 0;
-        list-style: none;
-        color: white;
         text-decoration: none;
-        cursor: default;
         transition: 125ms;
+        user-select: none;
     }
 
     & li, a {
@@ -44,10 +45,24 @@ html {
 
 @media (min-width: 1000px) {
     html {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+
         & body {
-            max-width: 76%;
-            min-width: auto;
-            min-height: 518px;
+            align-items: center;
+            display: flex;
+            justify-content: space-evenly;
+            max-width: unset;
+            min-width: rem(1110);
+
+            main {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                max-height: unset;
+                max-width: rem(825);
+            }
         }
     }
 }
