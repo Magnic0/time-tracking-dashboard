@@ -130,7 +130,7 @@
 @media screen and (min-width: rem(1000)) {
     .timer {
         height: rem(244);
-        margin-bottom: rem(30);
+        padding: 0 10px rem(30) 10px;
         width: rem(255);
 
         &__inside {

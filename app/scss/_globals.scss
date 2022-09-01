@@ -14,7 +14,6 @@ html {
         max-width: rem(480);
         min-width: rem(295);
         margin: auto;
-        padding: rem(80) rem(20);
     }
 
     & section, div, a, nav, img, span, label {
@@ -52,9 +51,11 @@ html {
         & body {
             align-items: center;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: center;
             max-width: unset;
-            min-width: rem(1110);
+            min-width: unset;
+            padding: rem(30);
+            width: 100%;
 
             main {
                 display: flex;
