@@ -1,22 +1,10 @@
 .timer {
     width: 100%;
 
-    &:hover {
-        cursor: pointer;
-
-        & div {
-            &:hover {
-                cursor: inherit;
-    
-                & span, label {
-                    &:hover {
-                        cursor: inherit;
-                    }
-                }
-
-                &:last-child {
-                    background-color: $col-midBlue;
-                }
+    & div {
+        &:hover {
+            &:last-child {
+                background-color: $col-midBlue;
             }
         }
     }
