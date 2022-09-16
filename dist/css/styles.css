@@ -1,0 +1,279 @@
+html {
+  background-color: hsl(226deg, 43%, 10%);
+  font-family: "Outfit", sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html.container {
+  box-sizing: border-box;
+}
+html body {
+  max-width: 30rem;
+  min-width: 18.4375rem;
+  margin: auto;
+  padding: 5rem 1.875rem;
+}
+html section, html div, html a, html nav, html img, html span, html label {
+  color: white;
+  cursor: default;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  transition: 125ms;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+html li, html a {
+  color: hsl(236deg, 100%, 87%);
+}
+html li:hover, html a:hover {
+  color: white;
+  cursor: pointer;
+}
+html .attribution {
+  display: none;
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  html {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+  }
+  html body {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    max-width: unset;
+    min-width: unset;
+    padding: 1.875rem;
+    width: 100%;
+  }
+  html body main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-height: unset;
+    max-width: 51.5625rem;
+  }
+}
+header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+header .user {
+  background-color: hsl(246deg, 80%, 60%);
+  border-radius: 0.9375rem;
+  display: flex;
+  height: 8.4375rem;
+  justify-content: space-around;
+  width: 100%;
+  z-index: 1;
+}
+header .user__insideContainer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 19.5rem;
+  position: relative;
+  width: 80%;
+}
+header .user__insideContainer--textContainer {
+  display: flex;
+  flex-direction: column;
+}
+header .user__insideContainer--textContainer span {
+  font-size: 1.4375rem;
+  font-weight: 300;
+}
+header .user__insideContainer--textContainer label {
+  color: hsl(236deg, 100%, 87%);
+  font-size: 1rem;
+  font-weight: 300;
+}
+header .user__insideContainer img {
+  width: 4.1875rem;
+  height: 4.1875rem;
+  border: 3px solid white;
+  border-radius: 100%;
+}
+header .category {
+  background-color: hsl(235deg, 46%, 20%);
+  border-bottom-right-radius: 0.9375rem;
+  border-bottom-left-radius: 0.9375rem;
+  box-sizing: border-box;
+  height: 5rem;
+  position: relative;
+  top: -0.9375rem;
+  width: 100%;
+}
+header .category nav {
+  display: flex;
+  font-size: 1.0625rem;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 2.1875rem;
+  position: relative;
+  width: 80%;
+}
+
+@media screen and (min-width: 1000px) {
+  header {
+    height: 34.375rem;
+    min-width: 15.9375rem;
+    max-width: 15.9375rem;
+    padding: 0 10px;
+  }
+  header .user {
+    align-items: center;
+    height: 22.125rem;
+    max-width: 15.9375rem;
+  }
+  header .user__insideContainer {
+    align-items: flex-start;
+    flex-direction: column;
+    height: 75%;
+    justify-content: space-around;
+    margin-bottom: 2.5625rem;
+  }
+  header .user__insideContainer img {
+    scale: 1.1;
+  }
+  header .user__insideContainer--textContainer span {
+    font-size: 2.625rem;
+  }
+  header .category {
+    max-width: 15.9375rem;
+    height: 11.125rem;
+  }
+  header .category nav {
+    flex-direction: column;
+    height: 70%;
+    padding-left: 1.25rem;
+  }
+}
+.timer {
+  width: 100%;
+}
+.timer div:hover:last-child {
+  background-color: hsl(236deg, 41%, 34%);
+}
+.timer__bg {
+  background-color: whitesmoke;
+  background-position-x: 90%;
+  background-position-y: -0.3125rem;
+  background-repeat: no-repeat;
+  background-size: 4.375rem;
+  border-radius: 15px;
+  box-sizing: border-box;
+  display: flex;
+  height: 4.375rem;
+  justify-content: space-around;
+  width: 100%;
+}
+.timer__bg--work {
+  background-color: hsl(15deg, 100%, 70%);
+  background-image: url(../../images/icon-work.svg);
+}
+.timer__bg--play {
+  background-color: hsl(195deg, 74%, 62%);
+  background-image: url(../../images/icon-play.svg);
+}
+.timer__bg--study {
+  background-color: hsl(348deg, 100%, 68%);
+  background-image: url(../../images/icon-study.svg);
+}
+.timer__bg--exercise {
+  background-color: hsl(145deg, 58%, 55%);
+  background-image: url(../../images/icon-exercise.svg);
+}
+.timer__bg--social {
+  background-color: hsl(264deg, 64%, 52%);
+  background-image: url(../../images/icon-social.svg);
+}
+.timer__bg--selfcare {
+  background-color: hsl(43deg, 84%, 65%);
+  background-image: url(../../images/icon-self-care.svg);
+}
+.timer__inside {
+  align-items: center;
+  background-color: hsl(235deg, 46%, 20%);
+  border-radius: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  height: 7.5rem;
+  justify-content: center;
+  position: relative;
+  top: -1.5625rem;
+  width: 100%;
+}
+.timer__inside div {
+  align-items: baseline;
+  box-sizing: inherit;
+  display: flex;
+  height: 1.875rem;
+  justify-content: space-between;
+  width: 80%;
+}
+.timer__inside div label {
+  font-size: 1.125rem;
+}
+.timer__inside div:last-child {
+  align-items: center;
+}
+.timer__inside div:last-child span:first-child {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.timer__inside div:last-child span:last-child {
+  color: hsl(236deg, 100%, 87%);
+  font-size: 1rem;
+}
+.timer__inside--button {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: space-between;
+  width: 1.375rem;
+}
+.timer__inside--button span {
+  background-color: hsl(236deg, 100%, 87%);
+  border-radius: 0.375rem;
+  height: 0.3125rem;
+  width: 0.3125rem;
+  transition: 125ms;
+}
+.timer__inside--button:hover {
+  cursor: pointer;
+}
+.timer__inside--button:hover span {
+  background-color: white;
+}
+
+@media screen and (min-width: 62.5rem) {
+  .timer {
+    height: 15.25rem;
+    padding: 0 10px 1.875rem 10px;
+    width: 15.9375rem;
+  }
+  .timer__inside {
+    height: 199px;
+    justify-content: center;
+  }
+  .timer__inside div:last-child {
+    align-items: flex-start;
+    flex-direction: column;
+    height: unset;
+  }
+  .timer__inside div:last-child span:first-child {
+    font-size: 3.3rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
