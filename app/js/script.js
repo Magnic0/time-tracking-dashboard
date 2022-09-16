@@ -2,29 +2,45 @@
 const URL = "../../data.json";
 
 // Timer HTML Elements
-const timerElement = document.getElementsByClassName('timer__inside');
+const mainElement = document.getElementsByTagName('main');
+const bgElementType = document.getElementsByClassName('timer__bg');
 
-function createTimer() {
-    timerElement[0].innerHTML = `
-        <div>
-          <label>Work</label>
-          <a class="timer__inside--button">
-            <span></span>
-            <span></span>
-            <span></span>
-          </a>
-        </div>
-        <div>
-          <span>32hrs</span>
-          <span>Last Week - 36hrs</span>
-        </div>
-    `
+function createTimer(label, time, lastTime) {
+    var formattedLabel = label.toLowerCase().replace(/\s+/g, '');
+
+    mainElement[0].innerHTML += `
+        <section class="timer container">
+            <div class="timer__bg timer__bg--${formattedLabel}">
+            </div>
+            <div class="timer__inside">
+                <div>
+                <label>${label}</label>
+                <a class="timer__inside--button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                </div>
+                <div>
+                <span>${time}hrs</span>
+                <span>Last Week - ${lastTime}hrs</span>
+                </div>
+            </div>
+        </section>
+
+    `;
+
+    console.log(formattedLabel)
 }
-
-createTimer();
 
 fetch(URL)
     .then(( resp ) => resp.json())
     .then(( json ) => {
-        console.log(json[0].timeframes.daily);
+        for(let i = 0; i < json.length; i++) {
+            var label = json[i].title;
+            var time = json[i].timeframes.weekly.current;
+            var lastTime = json[i].timeframes.weekly.previous;
+
+            createTimer(label, time, lastTime);
+        }
     });
