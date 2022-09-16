@@ -1,5 +1,5 @@
 // JSON diretory
-const URL = "../../data.json";
+const URL = "data.json";
 
 // Timer HTML Elements
 const mainElement = document.getElementsByTagName('main');
