@@ -1,6 +1,6 @@
 # Frontend Mentor - Time tracking dashboard
 
-This Repo is a study Repo, created for my solution of the Time [Tracking Dashboard Challenge](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw/hub/time-tracking-dashboard-Icn2hUppi3) from [Frontend Mentor](https://www.frontendmentor.io/home).
+This Repo is a study Repo, created for my solution of the [Time Tracking Dashboard Challenge](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw) from [Frontend Mentor](https://www.frontendmentor.io/home).
 
 ## Viewing
 
@@ -9,6 +9,8 @@ The project is hosted by a Github Pages domain, so you can click on the image be
 >*It works in mobile too!*
 
 [![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)](https://magnic0.github.io/time-tracking-dashboard/)
+
+If you want to see my solution page in the Frontend Mentor website, you can click [right here](https://www.frontendmentor.io/solutions/time-tracking-dashboard-sass-javascript-FpPpuUEJxE)!
 
 
 ## How it was made
