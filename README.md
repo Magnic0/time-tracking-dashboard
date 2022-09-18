@@ -1,13 +1,3 @@
-<style>
-    img {
-        border-radius: 15px;
-        transition: all 100ms;
-    }
-    img:hover {
-        transform: scale(1.02);
-    }
-</style>
-
 # Frontend Mentor - Time tracking dashboard
 
 This Repo is a study Repo, created for my solution of the Time [Tracking Dashboard Challenge](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw/hub/time-tracking-dashboard-Icn2hUppi3) from [Frontend Mentor](https://www.frontendmentor.io/home).
