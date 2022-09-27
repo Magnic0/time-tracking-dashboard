@@ -21,7 +21,7 @@ function createTimer(label, currentTimeFrame, time, lastTime) {
             </div>
             <div class="timer__inside">
                 <div>
-                <label>${label}</label>
+                <h2>${label}</h2>
                 <a class="timer__inside--button">
                     <span></span>
                     <span></span>
