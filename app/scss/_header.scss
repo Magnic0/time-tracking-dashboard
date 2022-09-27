@@ -25,9 +25,11 @@ header {
                 display: flex;
                 flex-direction: column;
 
-                & span {
+                & h1 {
                     font-size: rem(23);
                     font-weight: $font-light;
+                    margin: 0;
+                    padding: 0;
                 }
         
                 & label {
@@ -51,19 +53,26 @@ header {
         border-bottom-right-radius: rem(15);
         border-bottom-left-radius: rem(15);
         box-sizing: border-box;
+        display: flex;
         height: rem(80);
+        justify-content: center;
         position: relative;
         top: rem(-15);
         width: 100%;
 
         & nav {
-            display: flex;
-            font-size: rem(17);
-            justify-content: space-around;
-            margin: auto;
-            margin-top: rem(35);
-            position: relative;
             width: 80%;
+
+            ul {
+                display: flex;
+                font-size: rem(17);
+                justify-content: space-around;
+                list-style: none;
+                margin: auto;
+                margin-top: rem(35);
+                padding: 0;
+                position: relative;
+             }
         }
     }
 }
@@ -94,7 +103,7 @@ header {
                 }
 
                 &--textContainer {
-                    span {
+                    h1 {
                         font-size: rem(42);
                     }
                 }
@@ -106,9 +115,13 @@ header {
             height: rem(178);
 
             & nav {
-                flex-direction: column;
                 height: 70%;
                 padding-left: rem(20);
+
+                & ul {
+                    height: 100%;
+                    flex-direction: column;
+                }
             }
         }
     }
