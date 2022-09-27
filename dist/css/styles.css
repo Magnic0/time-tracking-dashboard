@@ -234,8 +234,11 @@ header .category nav ul {
   justify-content: space-between;
   width: 80%;
 }
-.timer__inside div label {
+.timer__inside div h2 {
+  font-weight: normal;
   font-size: 1.125rem;
+  padding: 0;
+  margin: 0;
 }
 .timer__inside div:last-child {
   align-items: center;
