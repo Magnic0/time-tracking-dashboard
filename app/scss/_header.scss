@@ -103,7 +103,7 @@ header {
                 }
 
                 &--textContainer {
-                    span {
+                    h1 {
                         font-size: rem(42);
                     }
                 }
@@ -115,9 +115,13 @@ header {
             height: rem(178);
 
             & nav {
-                flex-direction: column;
                 height: 70%;
                 padding-left: rem(20);
+
+                & ul {
+                    height: 100%;
+                    flex-direction: column;
+                }
             }
         }
     }
