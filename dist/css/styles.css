@@ -63,6 +63,11 @@ html .attribution {
     max-width: 51.5625rem;
   }
 }
+@media screen and (min-width: 1000px) and (max-width: 72.5rem) {
+  html body main {
+    width: 34.4rem;
+  }
+}
 header {
   align-items: center;
   display: flex;

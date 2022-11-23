@@ -58,15 +58,17 @@ html {
             padding: rem(30);
             width: 100%;
 
-            main {
+            & main {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: flex-start;
                 max-height: unset;
                 max-width: rem(825);
+
+                @media screen and (max-width: 72.5rem){
+                    width: 34.4rem;
+                }
             }
         }
     }
 }
-
-
